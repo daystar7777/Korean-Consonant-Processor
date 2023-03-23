@@ -18,7 +18,7 @@ Implemented in C, C++, JavaScript, and Python
 To use the C++ implementation of Korean Consonant Processor, include the header file kcp.hpp and link with the source file kcp.cpp. Then you can call the functions getLastCharacter, getCharacterType, and checkJongsung to process Korean characters.
 
 Here's an example of how to use the functions:
-
+```cpp
 #include <iostream>
 #include <string>
 #include <locale>
@@ -34,7 +34,7 @@ int main() {
     std::cout << "Has final consonant: " << jongsung << std::endl;
     return 0;
 }
-
+```
 
 
 [C]
@@ -42,8 +42,7 @@ To use the C implementation of Korean Consonant Processor, include the header fi
 
 Here's an example of how to use the functions:
 
-c  >>>>>>>
-
+```c
 #include <stdio.h>
 #include "kcp.h"
 
@@ -57,7 +56,7 @@ int main() {
     printf("Has final consonant: %d\n", jongsung);
     return 0;
 }
-
+```
 
 
 [JavaScript]
@@ -65,8 +64,7 @@ To use the JavaScript implementation of Korean Consonant Processor, simply inclu
 
 Here's an example of how to use the functions:
 
-javascript  >>>>>>>
-
+```javascript
 let str = "한글 조사 처리기 Korean Consonant Processor 12345 !@#$%^&*()_+";
 let lastChar = getLastCharacter(str);
 let type = getCharacterType(lastChar);
@@ -74,7 +72,7 @@ let jongsung = checkJongsung(lastChar);
 console.log("Last character: " + lastChar);
 console.log("Type: " + type);
 console.log("Has final consonant: " + jongsung);
-
+```
 
 
 
@@ -83,8 +81,7 @@ To use the Python implementation of Korean Consonant Processor, simply import th
 
 Here's an example of how to use the functions:
 
-python >>>>>>>
-
+```python
 str = "한글 조사 처리기 Korean Consonant Processor 12345 !@#$%^&*()_+"
 lastChar = getLastCharacter(str)
 type = getCharacterType(lastChar)
@@ -92,6 +89,8 @@ jongsung = checkJongsung(lastChar)
 print("Last character: " + lastChar)
 print("Type: " + str(type))
 print("Has final consonant: " + str(jongsung))
+```
+
 License
 Korean Consonant Processor is licensed under the MIT License. See the LICENSE file for details.
 
